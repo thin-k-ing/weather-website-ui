@@ -1,0 +1,54 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fa-water,
+.fa-tint,
+.angle {
+    color: brown;
+}
+
+.calendar {
+    margin: 10px;
+}
+
+.days {
+    border-radius: 0px;
+    margin: 2px auto;
+    text-align: center;
+    background-color: peachpuff;
+}
+
+.inactive-day {
+    background-color: rgb(248, 249, 250);
+    color: black;
+}
+
+.today {
+    background-color: brown;
+    color: peachpuff;
+    border: 1px peachpuff solid;
+}
+
+.newsletter {
+    margin: 20px;
+    text-align: center;
+    background-color: peachpuff;
+    color: brown;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.download {
+    text-align: center;
+    margin: 20px;
+    background-color: peachpuff;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bottom-item {
+    border: 1px solid brown;
+    padding: 5px;
+}
