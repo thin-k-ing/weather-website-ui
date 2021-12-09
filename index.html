@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/dbffe86f4e.js" crossorigin="anonymous"></script>
+
+    <!-- JS and jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <div>
+            <div class="d-flex flex-column flex-shrink-0 bg-light" style="width: 4.5rem; background-color: red;">
+                <a style="position: absolute; top: 0;" href="/" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
+                    <img src="assets/weather.png" alt="weather" style="width: 2rem">
+                </a>
+                <div style="position: absolute; top: 30%; ">
+                    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+                        <li class="nav-item" style="border-left: 4px solid brown;">
+                            <a href="#" class="nav-link py-3 border-bottom sidebar-item" data-bs-placement="right" data-bs-original-title="Home">
+                                <i class="fas fa-home fa-lg" style="color: brown;"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item" style="border-left: 4px solid transparent;">
+                            <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
+                                <i class="fas fa-shapes fa-lg" style="color: gray;"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item" style="border-left: 4px solid transparent;">
+                            <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Orders">
+                                <i class="fas fa-cog fa-lg" style="color: gray;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a style="position: absolute; bottom: 0;" href="/" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
+                    <i class="fas fa-sign-out-alt fa-lg" style="color: gray;"></i>
+                </a>
+
+            </div>
+        </div>
+        <div class="col-md-8" style="position: relative; margin-left: 6rem; background-color: white; padding-right: 0;">
+            <nav class="navbar navbar-expand-md navbar-light bg-light" style="padding: 0;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <h2>Weather Forecast</h2> Saturday, 26 December, 2020</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="form-outline" style="position: absolute; right: 10px;">
+                            <input type="search" id="form1" class="form-control" placeholder="Search" aria-label="Search" />
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div style="width: 90%; margin: 20px auto;">
+                <div style="box-shadow: 10px 10px 5px rgb(248, 249, 250); position: relative; height: 200px; color: brown; background-color: peachpuff;  border-radius: 20px;">
+                    <img src="assets/pngwing.com.png" style="width: 100%; border-radius: 20px;" alt="">
+                    <div style="position: absolute; top: 20px; left: 20px;">
+                        <h5>Mecca</h5>
+                        <h6>Saudi Arabia</h6>
+                    </div>
+                    <p style="font-size: 60px; font-weight: 200; position: absolute; right: 20px; top: 10px;">23°</p>
+                </div>
+
+                <p style="margin-top: 20px; margin-bottom: 0px;">
+                    Today <span style="font-weight: 600"><span style="text-decoration: underline;">Wee</span>k</span>
+                </p>
+
+                <div style="margin-top: 5px; background-color: rgb(248, 249, 250); padding: 10px 10px 20px; border-radius: 10px;" class="row">
+                    <div class="col-md-3">
+                        <div class="card" style="margin-top: 10px; border: 2px solid brown;">
+                            <div style="position: absolute; right: 10px; top: 10px;">
+                                <img src="assets/weathers/rainy.png" alt="weather" style="width: 50px;">
+                            </div>
+                            <div class="card-body">
+                                <h6>Saturday</h6>
+                                <p>Drizzle</p>
+                                <div style="text-align: left; line-height: 0;">
+                                    <p><i class="fas fa-water"></i> 10.3km/h</p>
+                                    <p style="margin-bottom:0;"><i class="fas fa-tint"></i> 60%</p>
+                                </div>
+                                <div style="position: absolute; right: 10px; bottom: 20px;">
+                                    <h4>23°</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="margin-top: 10px; border: 2px solid gray;">
+                            <div style="position: absolute; right: 10px; top: 10px;">
+                                <img src="assets/weathers/cloudy.png" alt="weather" style="width: 50px;">
+                            </div>
+                            <div class="card-body">
+                                <h6>Sunday</h6>
+                                <p>Cloudy</p>
+                                <div style="text-align: left; line-height: 0;">
+                                    <p><i class="fas fa-water"></i> 10.3km/h</p>
+                                    <p style="margin-bottom:0;"><i class="fas fa-tint"></i> 60%</p>
+                                </div>
+                                <div style="position: absolute; right: 10px; bottom: 20px;">
+                                    <h4>23°</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="margin-top: 10px; border: 2px solid gray;">
+                            <div style="position: absolute; right: 10px; top: 10px;">
+                                <img src="assets/weathers/heavy-rain.png" alt="weather" style="width: 50px;">
+                            </div>
+                            <div class="card-body">
+                                <h6>Monday</h6>
+                                <p>Heavy Rain</p>
+                                <div style="text-align: left; line-height: 0;">
+                                    <p><i class="fas fa-water"></i> 10.3km/h</p>
+                                    <p style="margin-bottom:0;"><i class="fas fa-tint"></i> 60%</p>
+                                </div>
+                                <div style="position: absolute; right: 10px; bottom: 20px;">
+                                    <h4>23°</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="margin-top: 10px; border: 2px solid gray;">
+                            <div style="position: absolute; right: 10px; top: 10px;">
+                                <img src="assets/weathers/snow.png" alt="weather" style="width: 50px;">
+                            </div>
+                            <div class="card-body">
+                                <h6>Tuesday</h6>
+                                <p>Snow</p>
+                                <div style="text-align: left; line-height: 0;">
+                                    <p><i class="fas fa-water"></i> 10.3km/h</p>
+                                    <p style="margin-bottom:0;"><i class="fas fa-tint"></i> 60%</p>
+                                </div>
+                                <div style="position: absolute; right: 10px; bottom: 20px;">
+                                    <h4>23°</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="margin-top: 10px; border: 2px solid gray;">
+                            <div style="position: absolute; right: 10px; top: 10px;">
+                                <img src="assets/weathers/storm.png" alt="weather" style="width: 50px;">
+                            </div>
+                            <div class="card-body">
+                                <h6>Wednesday</h6>
+                                <p>Thunderstorm</p>
+                                <div style="text-align: left; line-height: 0;">
+                                    <p><i class="fas fa-water"></i> 10.3km/h</p>
+                                    <p style="margin-bottom: 0;"><i class="fas fa-tint"></i> 60%</p>
+                                </div>
+                                <div style="position: absolute; right: 10px; bottom: 20px;">
+                                    <h4>23°</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="margin-top: 10px; border: 2px solid gray;">
+                            <div style="position: absolute; right: 10px; top: 10px;">
+                                <img src="assets/weathers/wind.png" alt="weather" style="width: 50px;">
+                            </div>
+                            <div class="card-body">
+                                <h6>Thursday</h6>
+                                <p>Windy</p>
+                                <div style="text-align: left; line-height: 0;">
+                                    <p><i class="fas fa-water"></i> 10.3km/h</p>
+                                    <p style="margin-bottom:0;"><i class="fas fa-tint"></i> 60%</p>
+                                </div>
+                                <div style="position: absolute; right: 10px; bottom: 20px;">
+                                    <h4>23°</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="margin-top: 10px; border: 2px solid gray;">
+                            <div style="position: absolute; right: 10px; top: 10px;">
+                                <img src="assets/weathers/sun.png" alt="weather" style="width: 50px;">
+                            </div>
+                            <div class="card-body">
+                                <h6>Friday</h6>
+                                <p>Sunny</p>
+                                <div style="text-align: left; line-height: 0;">
+                                    <p><i class="fas fa-water"></i> 10.3km/h</p>
+                                    <p style="margin-bottom:0;"><i class="fas fa-tint"></i> 60%</p>
+                                </div>
+                                <div style="position: absolute; right: 10px; bottom: 20px;">
+                                    <h4>23°</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row" style="width: 90%; margin: 20px auto;">
+                <div class="col-md-4 bottom-item" style="border-radius: 10px 0 0 10px;">
+                    <h6>
+                        Sunrise & Sunset
+                    </h6>
+                    <div>
+                        <img src="assets/up-arrow.png" alt="" style="width: 10%; float: left; margin-right: 10px;">
+                        <p> 5:50am</p>
+                    </div>
+                    <div>
+                        <img src="assets/down-arrow.png" alt="" style="width: 10%; float: left; margin-right: 10px;">
+                        <p> 5:25pm</p>
+                    </div>
+                </div>
+                <div class="col-md-4 bottom-item">
+                    <h6>Temp. Graph</h6>
+                    <div>
+                        <img src="assets/graph.png" alt="" style="width: 25%;">
+                    </div>
+                </div>
+                <div class="col-md-4 bottom-item" style="border-radius: 0 10px 10px 0;">
+                    <h6>Air Quality Index</h6>
+                    <div style="background-color: rgb(251, 211, 84); position: relative; padding: auto 20px; border-radius: 10px;">
+                        <p style="margin-bottom: 0; margin-left: 10px;">US AQI</p>
+                        <h5 style="margin-left: 10px;">95*</h5>
+                        <h3 style="position: absolute; top: 10px; right: 10px;">| Moderate</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col side-col">
+            <div class="calendar" style=" text-align: center; background-color: rgb(248, 249, 250); border-radius: 20px; padding: 20px;">
+                <div style="color: brown;"><i class="fas fa-angle-left angle"></i> December <span class="year">2021 </span><i class="fas fa-angle-right angle" "></i></div>
+
+                <div class="row ">
+                    <div class="col-sm-2 days inactive-day ">
+                        <div>29</div>
+                    </div>
+                    <div class="col-sm-2 days inactive-day ">
+                        <div>30</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>1</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>2</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>3</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>4</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>5</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>6</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>7</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>8</div>
+                    </div>
+                    <div class="col-sm-2 days today ">
+                        <div>9</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>10</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>11</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>12</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>13</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>14</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>15</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>16</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>17</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>18</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>19</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>20</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>21</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>22</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>23</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>24</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>25</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>26</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>27</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>28</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>29</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>30</div>
+                    </div>
+                    <div class="col-sm-2 days ">
+                        <div>31</div>
+                    </div>
+                    <div class="col-sm-2 days inactive-day ">
+                        <div>1</div>
+                    </div>
+                    <div class="col-sm-2 days inactive-day ">
+                        <div>2</div>
+                    </div>
+                    <div class="col-sm-2 days inactive-day ">
+                        <div>3</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="newsletter ">
+                <h5><i class="far fa-paper-plane "></i> Subscribe to our newsletter!</h5>
+            </div>
+
+            <div class="download ">
+                <img src="assets/mobile.png " alt=" " style="width: 100%; border-radius: 10px; margin-bottom: 10px; ">
+                <h5>
+                    Get our weather app on your devices
+                </h5>
+                <div class="btn btn-outline-dark ">
+                    <i class="fab fa-apple "></i> Download
+                </div>
+                <div class="btn btn-outline-dark ">
+                    <i class="fab fa-google-play "></i> Download
+                </div>
+            </div>
+            <div class="download " style="text-align: left; position: relative; ">
+                <img src="assets/city.png " alt=" " style="width: 100%; border-radius: 10px; ">
+                <div style="position: absolute; top: 50px; right: 10px; background-color: brown; color: white; padding: 5px; border-radius: 10px; ">
+                    <p style="margin: 0px; ">+ Add City!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+
+</body>
+
+
+</html>
